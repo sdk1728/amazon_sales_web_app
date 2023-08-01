@@ -11,7 +11,7 @@ df['Date'] = pd.to_datetime(df['Date'])
 df['Date'] = df['Date'].dt.date
 
 # Main section
-st.title("Amazon Clothes Analysis Dashboard")
+st.title("Amazon Sales Analysis Dashboard")
 
 # Selectbox for Date
 selected_date = st.sidebar.selectbox('Select Date', df['Date'].sort_values().unique())
